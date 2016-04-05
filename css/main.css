@@ -1,0 +1,861 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  background-color: #f2d2e2;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: #d42380;
+  font-weight: 400;
+}
+
+header {
+  background-color: #eda3c8;
+  position: relative;
+  height: 200px;
+}
+
+h1 {
+  font-family: "Allura", cursive;
+  color: white;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  font-size: 1.6em;
+  z-index: 100;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.cupid {
+  top: 0;
+  left: 10px;
+  position: absolute;
+  width: 200px;
+
+}
+
+h2 {
+  font-family: "Allura", cursive;
+  color: #d42380;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.graph {
+  width: 100%;
+}
+
+.h22 {
+  color: #fff;
+  padding-top: 1em;
+}
+
+h3 {
+  color: #e9579e;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.uk-heart, .us-heart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+}
+
+.uk-pink, .us-pink {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.kiss, .couple, .dog {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.title {
+  text-align: center;
+  padding: 0.25em;
+}
+
+.title2 {
+  text-align: center;
+  padding-top: 0;
+}
+
+.number {
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  font-size: 2em;
+}
+
+.numberp {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 2em;
+}
+
+h4 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+}
+
+p {
+  padding: 1em;
+  margin: 0;
+  font-size: 1em;
+}
+
+.behind {
+  background-color: #eda3c8;
+}
+
+.scale {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.arrow, .arrow2, .arrow3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+}
+
+.lastp {
+  padding-bottom: 0;
+}
+
+.lastp2 {
+  padding-bottom: 3em;
+}
+
+.cupid-fill {
+  fill: #d42380;
+}
+
+.uk-fill1 {
+  clip-path: url("#svgid-2-");
+  fill: #213c75;
+}
+
+.uk-fill2 {
+  clip-path: url("#svgid-2-");
+  fill: #fff;
+}
+
+.uk-fill3 {
+  clip-path: url("#svgid-2-");
+  fill: #e03a3e;
+}
+
+.uk-fill4 {
+  clip-path: url("#svgid-2-");
+  fill: #dd3e44;
+}
+
+.us-fill1 {
+  clip-path: url("#svgid-2-");
+  fill: #065ba6;
+}
+
+.us-fill2 {
+  clip-path: url("#svgid-2-");
+  fill: #fff;
+}
+
+.us-fill3 {
+  clip-path: url("#svgid-2-");
+  fill: #e12529;
+}
+
+.scale-fill1 {
+  fill: #bf9e2f;
+}
+
+.scale-fill2 {
+  fill: #be1e2d;
+}
+
+.scale-fill3 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-miterlimit: 10;
+}
+
+.scale-fill4 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.scale-fill5 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.arrow-fill1 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.arrow-fill2 {
+  fill: #be1e2d;
+}
+
+.arrow-fill3 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.kiss-fill1 {
+  fill: #edb283;
+}
+
+.kiss-fill2 {
+  fill: #603913;
+}
+
+.kiss-fill3 {
+  fill: #fff;
+}
+
+.kiss-fill4 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.85;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dog-fill1 {
+  fill: #452c15;
+}
+
+.dog-fill2 {
+  fill: #65431a;
+}
+
+.dog-fill3 {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 0.85;
+  stroke-miterlimit: 10;
+}
+
+.dog-fill4 {
+  stroke: #000;
+  stroke-width: 0.85;
+  stroke-miterlimit: 10;
+}
+
+.dog-fill5 {
+  fill: #291111;
+}
+
+.couple-fill1 {
+  fill: #e9579e;
+}
+
+.couple-fill2 {
+  fill: #edb283;
+}
+
+.couple-fill3 {
+  fill: #603913;
+}
+
+.couple-fill4 {
+  fill: #fff;
+}
+
+.couple-fill5 {
+  fill: #be1e2d;
+}
+
+.couple-fill6 {
+  fill: #911a1f;
+}
+
+.couple-fill7 {
+  fill: #262262;
+}
+
+.st0 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 3.8808;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: #be1e2d;
+}
+
+.st2 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.9404;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 2.9106;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.4553;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st5 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 2.7651;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st6 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.3825;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st7 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 2.2121;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st8 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.106;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st9 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 3.3472;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st10 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.6736;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st11 {
+  fill: #d42380;
+}
+
+.st12 {
+  fill: #fff;
+}
+
+.st13 {
+  fill: #754c29;
+}
+
+.st14 {
+  fill: #e9579e;
+}
+
+.st15 {
+  fill: #f4edef;
+}
+
+.st16 {
+  fill: #c49a6c;
+}
+
+.st17 {
+  stroke: #000;
+  stroke-width: 1.1025;
+  stroke-miterlimit: 10;
+}
+
+.st18 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.1025;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st19 {
+  fill: #9fdbef;
+}
+
+.st20 {
+  fill: #6c6466;
+}
+
+.st21 {
+  fill: #ddad34;
+}
+
+.st22 {
+  fill: #f2d2e2;
+}
+
+.st23 {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1.1025;
+  stroke-miterlimit: 10;
+}
+
+.st24 {
+  fill: #8c8485;
+}
+
+.st25 {
+  fill: #603913;
+}
+
+.st26 {
+  fill: #603913;
+  stroke: #000;
+  stroke-width: 1.1025;
+  stroke-miterlimit: 10;
+}
+
+.st27 {
+  fill: #a7a9ac;
+}
+
+.st28 {
+  fill: none;
+  stroke: #39b54a;
+  stroke-width: 2.2;
+  stroke-miterlimit: 10;
+}
+
+.st29 {
+  fill: #f7d71d;
+}
+
+.st30 {
+  fill: #f7941e;
+}
+
+.st31 {
+  fill: #f9ed32;
+}
+
+.st32 {
+  fill: #fbb040;
+}
+
+.st33 {
+  fill: #f15a29;
+}
+
+.pinkk-fill1 {
+  fill: #d42380;
+}
+
+.pinkk-fill2 {
+  fill: #fff;
+}
+
+.pinks-fill1 {
+  fill: #d42380;
+}
+
+.pinks-fill2 {
+  fill: #fff;
+}
+
+@media only screen and (min-width: 28em) {
+
+  .heart-uk-usd {
+    position: relative;
+  }
+
+  .title {
+    padding-top: 1em;
+  }
+
+  .uk-heart {
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: -12px;
+    left: 58px;
+  }
+
+  .us-heart {
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: -12px;
+    right: 58px;
+  }
+
+  .uk-pink {
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: 7px;
+  }
+
+  .us-pink {
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: 7px;
+  }
+
+  .percent {
+    position: relative;
+    top: 120px;
+  }
+
+  .kiss, .couple, .dog {
+    width: 200px;
+  }
+
+  .numberp {
+    padding-bottom: 0;
+  }
+
+  .behind {
+    position: relative;
+    top: 150px;
+  }
+
+}
+
+@media only screen and (min-width: 31em) {
+
+  h1 {
+    width: 75%;
+    top: 5px;
+    font-size: 2.5em;
+  }
+
+  .cupid {
+    width: 25%;
+    top: 10px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  .uk-heart {
+    left: 76px;
+  }
+
+  .us-heart {
+    right: 76px;
+  }
+
+  .uk-pink {
+    left: 26px;
+  }
+
+  .us-pink {
+    right: 26px;
+  }
+
+  .percent {
+    top: 130px;
+  }
+
+  .numberp {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .scale {
+    width: 250px;
+  }
+
+  .lastp {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .lastp2 {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+}
+
+@media only screen and (min-width: 39em) {
+
+  .uk-heart {
+    left: 160px;
+  }
+
+  .us-heart {
+    right: 160px;
+  }
+
+  .uk-pink {
+    left: 110px;
+  }
+
+  .us-pink {
+    right: 110px;
+  }
+
+  .percent {
+    top: 140px;
+  }
+
+  .behind {
+    top: 168px;
+  }
+
+}
+
+@media only screen and (min-width: 53em) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .cupid {
+    width: 215px;
+  }
+
+  .graph {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .title2 {
+    font-size: 1.5em;
+  }
+
+  .uk-heart {
+    width: 150px;
+  }
+
+  .us-heart {
+    width: 150px;
+  }
+
+  .uk-pink {
+    width: 250px;
+    top: 95px;
+  }
+
+  .us-pink {
+    width: 250px;
+    top: 95px;
+  }
+
+  .percent {
+    top: 180px;
+  }
+
+  .fifty {
+    position: absolute;
+    display: inline-block;
+    left: 15px;
+    width: 33%;
+    top: 95px;
+  }
+
+  .thirty {
+    position: absolute;
+    display: inline-block;
+    left: 290px;
+    width: 33%;
+  }
+
+  .five {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    width: 33%;
+  }
+
+  .behind {
+    top: 500px;
+    position: relative;
+    height: 700px;
+  }
+
+  .sensitive {
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    left: 10px;
+    top: 302px;
+  }
+
+  .appreciation {
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    right: 10px;
+    top: 302px;
+  }
+
+  .lucky {
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    left: 10px;
+    top: 500px;
+  }
+
+  .reciprocity {
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    right: 10px;
+    top: 500px;
+  }
+
+  .arrow3 {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .thirty {
+    left: 350px;
+  }
+
+  .heart-uk-usd {
+    max-width: 905px;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (min-width: 69em) {
+
+  h1 {
+    font-size: 3.5em;
+    right: 60px;
+  }
+
+  .cupid {
+    left: 60px;
+  }
+
+  .percent {
+    max-width: 1055px;
+    margin: 0 auto;
+  }
+
+  .sensitive {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 5em;
+  }
+
+  .appreciation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-right: 5em;
+  }
+
+  .lucky {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 5em;
+  }
+
+  .reciprocity {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-right: 5em;
+  }
+
+}
