@@ -48,7 +48,13 @@ h1 {
   left: 10px;
   position: absolute;
   width: 200px;
+  transform-origin: middle;
+  animation: spin 4s alternate infinite;
+}
 
+@keyframes spin {
+  0% { transform: rotate(-15deg); }
+  100% { transform: rotate(15deg); }
 }
 
 h2 {
