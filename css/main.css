@@ -29,6 +29,31 @@ header {
   background-color: #eda3c8;
   position: relative;
   height: 200px;
+  overflow: hidden;
+}
+
+.whiteheart {
+  left: 0;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform-origin: center center;
+  animation: twinkle 3s infinite alternate;
+  background: url("../images/white-heart.svg") no-repeat center center / contain transparent;
+}
+
+@keyframes twinkle {
+
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+
+  100% {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 h1 {
@@ -41,6 +66,7 @@ h1 {
   z-index: 100;
   text-align: center;
   padding: 0.5em;
+  z-index: 2;
 }
 
 .cupid {
@@ -50,6 +76,7 @@ h1 {
   width: 200px;
   transform-origin: middle;
   animation: spin 4s alternate infinite;
+  z-index: 1;
 }
 
 @keyframes spin {
