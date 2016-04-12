@@ -190,6 +190,29 @@ p {
   width: 175px;
 }
 
+.arrow, .arrow3 {
+  animation: shoot 0.75s ease;
+}
+
+@keyframes shoot {
+
+  0% { transform: translate(-400px, 0); }
+
+  100% { transform: translate(0, 0); }
+}
+
+.arrow2 {
+  animation: shoot2 0.75s ease;
+  transform: scaleX(-1);
+}
+
+@keyframes shoot2 {
+
+  0% { transform: translate(400px, 0) scaleX(-1); }
+
+  100% { transform: translate(0, 0) scaleX(-1); }
+}
+
 .lastp {
   padding-bottom: 0;
 }
