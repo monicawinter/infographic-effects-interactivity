@@ -80,7 +80,9 @@ h1 {
 }
 
 @keyframes spin {
+
   0% { transform: rotate(-15deg); }
+
   100% { transform: rotate(15deg); }
 }
 
@@ -132,6 +134,81 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+}
+
+.kiss {
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-kiss-animate {
+  opacity: 1;
+  animation: kiss-jiggle 250ms linear;
+}
+
+.couple {
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-couple-animate {
+  opacity: 1;
+  animation: couple-jiggle 250ms linear;
+}
+
+.dog {
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-dog-animate {
+  opacity: 1;
+  animation: couple-jiggle 250ms linear;
+}
+
+@keyframes kiss-jiggle {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes couple-jiggle {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes dog-jiggle {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .title {
@@ -190,7 +267,11 @@ p {
   width: 175px;
 }
 
-.arrow, .arrow3 {
+.arrow-animate {
+  animation: shoot 0.75s ease;
+}
+
+.arrow3-animate {
   animation: shoot 0.75s ease;
 }
 
@@ -201,7 +282,7 @@ p {
   100% { transform: translate(0, 0); }
 }
 
-.arrow2 {
+.arrow2-animate {
   animation: shoot2 0.75s ease;
   transform: scaleX(-1);
 }
