@@ -185,45 +185,57 @@ h3 {
 }
 
 @keyframes kiss-jiggle {
+
   0% {
     transform: rotate(0);
   }
+
   33% {
     transform: rotate(15deg);
   }
+
   66% {
     transform: rotate(-15deg);
   }
+
   100% {
     transform: rotate(0);
   }
 }
 
 @keyframes couple-jiggle {
+
   0% {
     transform: rotate(0);
   }
+
   33% {
     transform: rotate(15deg);
   }
+
   66% {
     transform: rotate(-15deg);
   }
+
   100% {
     transform: rotate(0);
   }
 }
 
 @keyframes dog-jiggle {
+
   0% {
     transform: rotate(0);
   }
+
   33% {
     transform: rotate(15deg);
   }
+
   66% {
     transform: rotate(-15deg);
   }
+
   100% {
     transform: rotate(0);
   }
