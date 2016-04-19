@@ -120,6 +120,15 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 75px;
+  transition: all 200ms ease-in;
+  animation: pump 600ms alternate infinite;
+}
+
+@keyframes pump {
+
+  0% { transform: scale(1); }
+
+  100% { transform: scale(1.25); }
 }
 
 .uk-pink, .us-pink {
@@ -127,6 +136,15 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+  transition: all 200ms ease-in;
+}
+
+.uk-pink:hover {
+  transform: scale(1.25);
+}
+
+.us-pink:hover {
+  transform: scale(1.25);
 }
 
 .kiss, .couple, .dog {
