@@ -743,6 +743,50 @@ p {
   fill: #fff;
 }
 
+.st1-heart {
+  fill: #be1e2d;
+  transform-origin: center;
+  transition: all 200ms ease-in;
+  animation: beat 600ms alternate infinite;
+}
+
+@keyframes beat {
+
+  0% { transform: scale(1); }
+
+  100% { transform: scale(1.2); }
+}
+
+.big-present {
+  transform-origin: center;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-present-animate {
+  opacity: 1;
+  animation: present-jiggle 250ms linear;
+}
+
+@keyframes present-jiggle {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(3.5deg);
+  }
+}
+
 @media only screen and (min-width: 28em) {
 
   .heart-uk-usd {

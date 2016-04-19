@@ -1,9 +1,18 @@
+var $bigPresent = $('.big-present');
 var $kiss = $('.kiss');
 var $couple = $('.couple');
 var $dog = $('.dog');
 var $arrow = $('.arrow');
 var $arrow2 = $('.arrow2');
 var $arrow3 = $('.arrow3');
+
+$bigPresent.waypoint(function (direction) {
+  if (direction == 'down') {
+    $bigPresent.addClass('js-present-animate');
+  } else {
+    $bigPresent.removeClass('js-present-animate');
+  }
+}, { offset: '50%' });
 
 $kiss.waypoint(function (direction) {
   if (direction == 'down') {
