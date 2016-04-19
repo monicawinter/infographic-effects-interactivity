@@ -260,6 +260,40 @@ p {
   width: 150px;
 }
 
+.scale-balance {
+  transform-origin: center;
+  animation: spin 3s alternate infinite;
+}
+
+@keyframes spin {
+
+  0% { transform: rotate(-15deg); }
+
+  100% { transform: rotate(15deg); }
+}
+
+.scale-girl {
+  animation: up 3s alternate infinite;
+}
+
+.scale-man {
+  animation: down 3s alternate infinite;
+}
+
+@keyframes up {
+
+  0% { transform: translate(0, -5px); }
+
+  100% { transform: translate(0, 8px); }
+}
+
+@keyframes down {
+
+  0% { transform: translate(0, 7px); }
+
+  100% { transform: translate(0, -7px); }
+}
+
 .arrow, .arrow2, .arrow3 {
   display: block;
   margin-left: auto;
