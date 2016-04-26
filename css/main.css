@@ -867,29 +867,10 @@ p {
 
 .st1-heart {
   fill: #be1e2d;
-  transform-origin: center;
-  -webkit-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-  -webkit-animation: beat 600ms alternate infinite;
-  animation: beat 600ms alternate infinite;
-}
-
-@-webkit-keyframes beat {
-
-  0% { -webkit-transform: scale(1); }
-
-  100% { -webkit-transform: scale(1.2); }
-}
-
-@keyframes beat {
-
-  0% { transform: scale(1); }
-
-  100% { transform: scale(1.2); }
 }
 
 .big-present {
-  transform-origin: center;
+  transform-origin: 298px 256px;
   opacity: 0;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
