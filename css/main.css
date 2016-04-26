@@ -23,6 +23,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #d42380;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 header {
@@ -75,8 +76,16 @@ h1 {
   position: absolute;
   width: 200px;
   transform-origin: middle;
+  -webkit-animation: spin 4s alternate infinite;
   animation: spin 4s alternate infinite;
   z-index: 1;
+}
+
+@-webkit-keyframes spin {
+
+  0% { -webkit-transform: rotate(-15deg); }
+
+  100% { -webkit-transform: rotate(15deg); }
 }
 
 @keyframes spin {
@@ -121,7 +130,15 @@ h3 {
   margin-right: auto;
   width: 75px;
   transition: all 200ms ease-in;
+  -webkit-animation: pump 600ms alternate infinite;
   animation: pump 600ms alternate infinite;
+}
+
+@-webkit-keyframes pump {
+
+  0% { transform: scale(1); }
+
+  100% { transform: scale(1.25); }
 }
 
 @keyframes pump {
@@ -136,6 +153,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
@@ -156,32 +174,57 @@ h3 {
 
 .kiss {
   opacity: 0;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
 .js-kiss-animate {
   opacity: 1;
+  -webkit-animation: kiss-jiggle 250ms linear;
   animation: kiss-jiggle 250ms linear;
 }
 
 .couple {
   opacity: 0;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
 .js-couple-animate {
   opacity: 1;
+  -webkit-animation: couple-jiggle 250ms linear;
   animation: couple-jiggle 250ms linear;
 }
 
 .dog {
   opacity: 0;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
 .js-dog-animate {
   opacity: 1;
+  -webkit-animation: couple-jiggle 250ms linear;
   animation: couple-jiggle 250ms linear;
+}
+
+@-webkit-keyframes kiss-jiggle {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 @keyframes kiss-jiggle {
@@ -203,7 +246,45 @@ h3 {
   }
 }
 
+@-webkit-keyframes couple-jiggle {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
 @keyframes couple-jiggle {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes dog-jiggle {
 
   0% {
     transform: rotate(0);
@@ -292,7 +373,15 @@ p {
 
 .scale-balance {
   transform-origin: center;
+  -webkit-animation: spin 3s alternate infinite;
   animation: spin 3s alternate infinite;
+}
+
+@-webkit-keyframes spin {
+
+  0% { transform: rotate(-15deg); }
+
+  100% { transform: rotate(15deg); }
 }
 
 @keyframes spin {
@@ -303,11 +392,20 @@ p {
 }
 
 .scale-girl {
+  -webkit-animation: up 3s alternate infinite;
   animation: up 3s alternate infinite;
 }
 
 .scale-man {
+  -webkit-animation: down 3s alternate infinite;
   animation: down 3s alternate infinite;
+}
+
+@-webkit-keyframes up {
+
+  0% { transform: translate(0, -5px); }
+
+  100% { transform: translate(0, 8px); }
 }
 
 @keyframes up {
@@ -315,6 +413,13 @@ p {
   0% { transform: translate(0, -5px); }
 
   100% { transform: translate(0, 8px); }
+}
+
+@-webkit-keyframes down {
+
+  0% { transform: translate(0, 7px); }
+
+  100% { transform: translate(0, -7px); }
 }
 
 @keyframes down {
@@ -332,11 +437,20 @@ p {
 }
 
 .arrow-animate {
+  -webkit-animation: shoot 0.75s ease;
   animation: shoot 0.75s ease;
 }
 
 .arrow3-animate {
+  -webkit-animation: shoot 0.75s ease;
   animation: shoot 0.75s ease;
+}
+
+@-webkit-keyframes shoot {
+
+  0% { transform: translate(-400px, 0); }
+
+  100% { transform: translate(0, 0); }
 }
 
 @keyframes shoot {
@@ -347,8 +461,16 @@ p {
 }
 
 .arrow2-animate {
+  -webkit-animation: shoot2 0.75s ease;
   animation: shoot2 0.75s ease;
   transform: scaleX(-1);
+}
+
+@-webkit-keyframes shoot2 {
+
+  0% { transform: translate(400px, 0) scaleX(-1); }
+
+  100% { transform: translate(0, 0) scaleX(-1); }
 }
 
 @keyframes shoot2 {
@@ -746,8 +868,17 @@ p {
 .st1-heart {
   fill: #be1e2d;
   transform-origin: center;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
+  -webkit-animation: beat 600ms alternate infinite;
   animation: beat 600ms alternate infinite;
+}
+
+@-webkit-keyframes beat {
+
+  0% { transform: scale(1); }
+
+  100% { transform: scale(1.2); }
 }
 
 @keyframes beat {
@@ -760,12 +891,33 @@ p {
 .big-present {
   transform-origin: center;
   opacity: 0;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
 .js-present-animate {
   opacity: 1;
+  -webkit-animation: present-jiggle 250ms linear;
   animation: present-jiggle 250ms linear;
+}
+
+@-webkit-keyframes present-jiggle {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(3.5deg);
+  }
 }
 
 @keyframes present-jiggle {
