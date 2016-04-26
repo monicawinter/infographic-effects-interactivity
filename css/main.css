@@ -372,7 +372,7 @@ p {
 }
 
 .scale-balance {
-  transform-origin: 62px 33px;
+  transform-origin: 62px 58px;
   -webkit-animation: spin 3s alternate infinite;
   animation: spin 3s alternate infinite;
 }
