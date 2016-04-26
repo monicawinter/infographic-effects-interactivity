@@ -136,9 +136,9 @@ h3 {
 
 @-webkit-keyframes pump {
 
-  0% { transform: scale(1); }
+  0% { -webkit-transform: scale(1); }
 
-  100% { transform: scale(1.25); }
+  100% { -webkit-transform: scale(1.25); }
 }
 
 @keyframes pump {
@@ -211,19 +211,19 @@ h3 {
 @-webkit-keyframes kiss-jiggle {
 
   0% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
   }
 
   33% {
-    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
   }
 
   66% {
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
   }
 
   100% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
   }
 }
 
@@ -249,19 +249,19 @@ h3 {
 @-webkit-keyframes couple-jiggle {
 
   0% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
   }
 
   33% {
-    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
   }
 
   66% {
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
   }
 
   100% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
   }
 }
 
@@ -287,19 +287,19 @@ h3 {
 @-webkit-keyframes dog-jiggle {
 
   0% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
   }
 
   33% {
-    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
   }
 
   66% {
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
   }
 
   100% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
   }
 }
 
@@ -379,9 +379,9 @@ p {
 
 @-webkit-keyframes spin {
 
-  0% { transform: rotate(-15deg); }
+  0% { -webkit-transform: rotate(-15deg); }
 
-  100% { transform: rotate(15deg); }
+  100% { -webkit-transform: rotate(15deg); }
 }
 
 @keyframes spin {
@@ -403,9 +403,9 @@ p {
 
 @-webkit-keyframes up {
 
-  0% { transform: translate(0, -5px); }
+  0% { -webkit-transform: translate(0, -5px); }
 
-  100% { transform: translate(0, 8px); }
+  100% { -webkit-transform: translate(0, 8px); }
 }
 
 @keyframes up {
@@ -417,9 +417,9 @@ p {
 
 @-webkit-keyframes down {
 
-  0% { transform: translate(0, 7px); }
+  0% { -webkit-transform: translate(0, 7px); }
 
-  100% { transform: translate(0, -7px); }
+  100% { -webkit-transform: translate(0, -7px); }
 }
 
 @keyframes down {
@@ -448,9 +448,9 @@ p {
 
 @-webkit-keyframes shoot {
 
-  0% { transform: translate(-400px, 0); }
+  0% { -webkit-transform: translate(-400px, 0); }
 
-  100% { transform: translate(0, 0); }
+  100% { -webkit-transform: translate(0, 0); }
 }
 
 @keyframes shoot {
@@ -468,9 +468,9 @@ p {
 
 @-webkit-keyframes shoot2 {
 
-  0% { transform: translate(400px, 0) scaleX(-1); }
+  0% { -webkit-transform: translate(400px, 0) scaleX(-1); }
 
-  100% { transform: translate(0, 0) scaleX(-1); }
+  100% { -webkit-transform: translate(0, 0) scaleX(-1); }
 }
 
 @keyframes shoot2 {
@@ -876,9 +876,9 @@ p {
 
 @-webkit-keyframes beat {
 
-  0% { transform: scale(1); }
+  0% { -webkit-transform: scale(1); }
 
-  100% { transform: scale(1.2); }
+  100% { -webkit-transform: scale(1.2); }
 }
 
 @keyframes beat {
@@ -904,19 +904,19 @@ p {
 @-webkit-keyframes present-jiggle {
 
   0% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
   }
 
   33% {
-    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
   }
 
   66% {
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
   }
 
   100% {
-    transform: rotate(3.5deg);
+    -webkit-transform: rotate(3.5deg);
   }
 }
 
